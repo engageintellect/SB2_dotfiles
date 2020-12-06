@@ -15,10 +15,13 @@
 xsetroot -cursor_name left_ptr
 
 #===[ AUTOSTART ]===#
-python /home/r3dux/bin/env/env.py
+
+#/home/r3dux/bin/env/env.py
+/home/r3dux/bin/env/environment.sh
 
 
 #===[ WORKSPACES ]===#
+
 #bspc monitor -d 'dev'  'www' 'code' 'chat' 'media' 'sys' 'files' 'vbox' 'github' 'email'
 #bspc monitor -d ' dev'  ' www' ' code' ' chat' ' media' ' sys' ' files' ' vbox' ' github' ' email'
 #bspc monitor -d '1'  '2' '3' '4' '5' '6' '7' '8' '9' '10'
@@ -67,10 +70,12 @@ bspc config pointer_modifier mod4
 
 
 #===[ SCRATCHPAD ]===#
+
 bspc rule -a st-256color:scratchy state=floating sticky=on rectangle=2000x1500+0+0 center=true border_width=0
 
 
 #===[ COLORS ]===#
+
 background=$color0
 foreground=$color7
 foreground_alt=$color7
@@ -81,6 +86,7 @@ alert=$color3
 
 
 #===[ WINDOW RULES ]===#
+
 #bspc rule -a st-256color:st-256color rectangle=1800x1250+0+0 center=true
 bspc rule -a st-256color:st-256color rectangle=2250x1750+0+0 center=true
 bspc rule -a Gimp desktop='^5' state=floating follow=on

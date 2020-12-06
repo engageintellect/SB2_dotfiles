@@ -109,7 +109,8 @@ super + shift + a
 
 # YTOP
 super + shift + y
-    st -n ytop -e ytop -f
+    st -n new -e ytop -f
+    # st -n ytop -e ytop -f
 
 # APPLE MUSIC
 super + m
