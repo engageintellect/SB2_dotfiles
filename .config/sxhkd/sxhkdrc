@@ -25,18 +25,37 @@ super + a
 # SCRATCHPAD
 Menu
     ~/bin/env/scratchy.sh
+super + ctrl + Return
+    ~/bin/env/scratchy.sh
 
-# LAUNCHER
+# DMENU
 super + shift + d
     ~/bin/env/dmenu_pywal.sh
     # rofi -show run -p "RUN" -font "Hack Nerd Font 20" -location 1 -width 20 -lines 100
+
+
+
+#---[ ENV ]===#
+
+# ROFI RUN
+super + d
+     rofi -show run -lines 6 -eh 2 -width 700 -padding 20 -font "Hack Nerd Font 20"
+# ROFI WINDOWS
+# super + shift + w
+     # rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
+# ROFI SSH
+# super + shift + s
+     # rofi -show ssh -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
+ # ROFI COMBI
+# super + shift + c
+     # rofi -show combi -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
+
 
 # NETWORK
 super + shift + n
     st -n iwctl -e iwctl
     #~/bin/env/networkmanager_dmenu_pywal.sh
     #networkmanager_dmenu  -fn 'mononoki Nerd Font-10' -nb '#000000' -sf '#000000' -sb '#ffffff' -nf '#ffffff'
-
 
 # EDIT CONFIGS
 super + shift + e
@@ -45,6 +64,10 @@ super + shift + e
 # COMPILE SUCKLESS
 super + shift + c
     ~/bin/env/scripts/compile_suckless.sh
+
+# DMENU BOOKMARKS
+super + shift + b
+    ~/bin/env/scripts/bookmarks/bookmarks.sh
 
 
 # CLIPMENU
@@ -64,20 +87,6 @@ super + shift + p
     killall polybar && polybar -r new && bspc config top_padding 25
 
 
-#==[ ROFI ]==#
-
-# ROFI RUN
-super + d
-     rofi -show run -lines 6 -eh 2 -width 700 -padding 20 -font "Hack Nerd Font 20"
-# ROFI WINDOWS
-# super + shift + w
-     # rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
-# ROFI SSH
-# super + shift + s
-     # rofi -show ssh -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
- # ROFI COMBI
-# super + shift + c
-     # rofi -show combi -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
 
 
 #===[ BROWSERS ]===#
@@ -93,10 +102,6 @@ super + c
 
 
 #==[ PROGRAM BINDINGS ]===#
-
-# DMENU BOOKMARKS
-super + shift + b
-    ~/bin/env/scripts/bookmarks/bookmarks.sh
 
 
 # WALLY
