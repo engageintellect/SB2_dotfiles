@@ -88,7 +88,7 @@ alert=$color3
 #===[ WINDOW RULES ]===#
 
 #bspc rule -a st-256color:st-256color rectangle=1800x1250+0+0 center=true
-bspc rule -a st-256color:st-256color rectangle=2250x1750+0+0 center=true
+bspc rule -a st-256color:st-256color rectangle=2000x1500+0+0 center=true
 bspc rule -a Gimp desktop='^5' state=floating follow=on
 bspc rule -a Krita desktop='^5' state=floating follow=on
 bspc rule -a qutebrowser rectangle=2250x1750+0+0 center=true
@@ -99,8 +99,8 @@ bspc rule -a Viewnior state=floating center=true
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a st-256color:pulsemixer state=floating rectangle=1000x600+0+0 center=true
-bspc rule -a st-256color:iwctl state=floating rectangle=1500x1000+0+0 center=true
 bspc rule -a st-256color:ytop state=floating rectangle=2000x1500+0+0 center=true
+bspc rule -a st-256color:iwctl state=floating rectangle=1500x1000+0+0 center=true
 bspc rule -a st-256color:scratchy state=floating
 bspc rule -a Surf state=floating rectangle=2250x1750+0+0 center=true
 bspc rule -a Chromium state=floating rectangle=2250x1750+0+0 center=true
