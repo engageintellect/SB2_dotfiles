@@ -44,6 +44,7 @@ nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>g :Goyo<CR>
 nmap <Leader>ad :CocDisable<CR>
 nmap <Leader>ae :CocEnable<CR>
+nmap <Leader>b :buffers<CR>
 
 
 "===[ PYWAL ]==="
@@ -113,7 +114,7 @@ let g:kite_supported_languages = ['python']
 
 "===[ CURSOR BLOCK STYLE ]==="
 
-set guicursor=n-v-c-sm:hor20,i-ci-ve:ver25-Cursor,r-cr-o:hor20
+" set guicursor=n-v-c-sm:hor20,i-ci-ve:ver25-Cursor,r-cr-o:hor20
 
 
 "===[ CoC ]==="
