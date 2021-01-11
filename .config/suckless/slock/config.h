@@ -3,7 +3,7 @@ static const char *user  = "r3dux";
 static const char *group = "wheel";
 
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "#229CA1",     /* after initialization */
+	[INIT] =   "black",     /* after initialization */
 	[INPUT] =  "black",   /* during input */
 	[FAILED] = "#CC3333",   /* wrong password */
 };

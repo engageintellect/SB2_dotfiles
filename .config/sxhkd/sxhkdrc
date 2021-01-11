@@ -20,7 +20,7 @@ super + Return
     st
 	#st -e zsh -c tmux
 super + a
-    alacritty
+    kitty
 
 # SCRATCHPAD
 Menu
