@@ -1,20 +1,22 @@
 #!/bin/bash
-#     _
-#    | |__  ___ _ ____      ___ __ ___    _ __ ___
-#    | '_ \/ __| '_ \ \ /\ / / '_ ` _ \  | '__/ __|
-#    | |_) \__ \ |_) \ V  V /| | | | | | | | | (__
-#    |_.__/|___/ .__/ \_/\_/ |_| |_| |_| |_|  \___|
-#              |_|
+# _
+#| |__  ___ _ ____      ___ __ ___    _ __ ___
+#| '_ \/ __| '_ \ \ /\ / / '_ ` _ \  | '__/ __|
+#| |_) \__ \ |_) \ V  V /| | | | | | | | | (__
+#|_.__/|___/ .__/ \_/\_/ |_| |_| |_| |_|  \___|
+#          |_|
 #
+# Build: Surface Book 2 
 # Version: 2.5
-# Build: ThinkPad X220
 
-# SOURCE PYWAL COLORS 
 . "${HOME}/.cache/wal/colors.sh"
 
+# CURSOR THEME (get rid of default X style)
+# xsetroot -cursor_name left_ptr
 
 #===[ AUTOSTART ]===#
 
+#/home/r3dux/bin/env/env.py
 /home/r3dux/bin/env/environment.sh
 
 
@@ -24,19 +26,11 @@
 #bspc monitor -d ' dev'  ' www' ' code' ' chat' ' media' ' sys' ' files' ' vbox' ' github' ' email'
 #bspc monitor -d '1'  '2' '3' '4' '5' '6' '7' '8' '9' '10'
 #bspc monitor -d 'I'  'II' 'III' 'IV' 'V' 'VI' 'VII' 'VIII' 'IX' 'X'
+#bspc monitor -d ' '  ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
+#bspc monitor -d ' '  ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
 
-#===[ CURRENT WORKSPACE LAYOUT ]===#
+bspc monitor -d ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
 
-# bspc monitor -d $(seq 1 10)
-
-# INTERNAL DISPLAY
-# bspc monitor LVDS1 -d ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
-bspc monitor eDP-1 -d ' ' ' ' ' ' ' ' ' ' ' ' '' ' ' ' ' ' '
-#📈
-# EXTERNAL DISPLAYS
-# bspc monitor DisplayPort-1 -d   
-# bspc monitor VGA1 -d                  
-bspc monitor eDP-1 -d                  
 
 
 #===[ WINDOW SETTINGS ]===#
@@ -75,10 +69,9 @@ bspc config pointer_follows_focus           false
 bspc config pointer_modifier mod4
 
 
-
 #===[ SCRATCHPAD ]===#
 
-bspc rule -a st-256color:scratchy state=floating sticky=on rectangle=900x600+0+0 center=true border_width=4
+bspc rule -a st-256color:scratchy state=floating sticky=on rectangle=2000x1500+0+0 center=true border_width=0
 
 
 #===[ COLORS ]===#
@@ -86,10 +79,10 @@ bspc rule -a st-256color:scratchy state=floating sticky=on rectangle=900x600+0+0
 background=$color0
 foreground=$color7
 foreground_alt=$color7
-primary=$color3
+#primary=$color1
+primary=$color2
 secondary=$color2
 alert=$color3
-
 
 
 #===[ WINDOW RULES ]===#
@@ -125,4 +118,3 @@ bspc rule -a "VirtualBox Manager" desktop='^8' state=floating rectangle=2000x150
 bspc rule -a "Kvantum Manager" state=floating rectangle=2000x1500+0+0 center=true
 bspc rule -a "pamac-manager" state=floating rectangle=2000x1500+0+0 center=true
 bspc rule -a "Network Connections" state=floating rectangle=1500x1000+0+0 center=true
-
