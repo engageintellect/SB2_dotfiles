@@ -10,15 +10,20 @@
 
 # DISPLAY SCALING
 export QT_SCALE_FACTOR=1
-export GDK_SCALE=.5
-export GDK_DPI_SCALE=1
+export GDK_SCALE=1
+export GDK_DPI_SCALE=.75
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # DISPLAY
 export DISPLAY=:0 xsel
 
+# JAVA
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # DEFAULT PROGRAMS
 export EDITOR='nvim'
+export SUDO_EDITOR='nvim'
+export VISUAL='nvim'
 export TERMINAL='xst'
 export BROWSER='qutebrowser'
 
