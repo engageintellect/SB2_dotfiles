@@ -78,7 +78,6 @@ alias search='pacman --color auto -Ss'
 alias ipkg='pacman -Si'
 alias install='sudo pacman --color auto -S'
 alias remove='sudo pacman --color auto -Rns'
-alias paclist='~/bin/env/scripts/paclist.sh'
 alias psearch='pacman --color auto -Q | grep'
 alias autoclean='sudo pacman -Qdt'
 
@@ -86,11 +85,11 @@ alias autoclean='sudo pacman -Qdt'
 #===[ SSH ]===#
 alias MBP='ssh 192.168.0.238 -p 4320'
 alias SB2='ssh 192.168.0.157 -p 4320'
-alias x220='ssh 192.168.0.7 -p 4320'
+alias x220='ssh 192.168.0.253 -p 4320'
 # alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@54.177.92.108'
 # alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@3.101.45.224'
 alias fa='ssh -i "~/docs/keys/firstam_aws.pem" ubuntu@13.57.56.155'
-alias kali='ssh -i ~/docs/keys/kali_aws.pem kali@3.227.252.213'
+alias kali='ssh -i ~/docs/keys/kali_aws.pem kali@3.92.92.136'
 alias imac='ssh josh@192.168.0.44'
 alias pi_raspbian='ssh pi@192.168.0.184'
 alias pi_manjaro='ssh r3dux@192.168.0.186'
@@ -219,8 +218,23 @@ fkill()
 }
 
 
+#=[ XMRIG ]=#
 
+mine() 
+{
+    clear && figlet "XMRIG"
+    xmrig -k -B
 
+}
+
+#=[ GENERATE PACLIST ]=#
+
+paclist()
+{
+    pacman --color=always -Q | less
+    name=$(cat /etc/hostname)
+    pacman --color=always -Q > ~/docs/system-env/paclist/$name-paclist.txt
+}
 
 # TEST FUNCTION
 tester() {
